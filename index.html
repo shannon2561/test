@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shannon Wu | Portfolio</title>
-    <meta name="description" content="Personal website of Shannon Wu, specializing in Finance, Data Analysis, and Lifestyle aesthetics.">
+    <title>吳佩馨 | Portfolio</title>
+    <meta name="description" content="Personal website of 吳佩馨, specializing in Finance, Data Analysis, and Lifestyle aesthetics.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">Shannon Wu.</div>
+        <div class="logo">吳佩馨.</div>
         <ul class="nav-links">
             <li><a href="#about">關於我</a></li>
+            <li><a href="#projects">專案</a></li>
             <li><a href="#experience">經歷</a></li>
             <li><a href="#skills">技能</a></li>
             <li><a href="#contact">聯絡</a></li>
@@ -23,10 +24,12 @@
     <header class="hero" id="home">
         <div class="hero-content">
             <div class="hero-badge">Finance x Data Science</div>
-            <h1 class="hero-title">你好，我是 Shannon Wu</h1>
-            <p class="hero-subtitle">
-                熱愛數據分析、生活美學與虛擬世界的探索者。<br>
-                目前就讀於國立政治大學，致力於數位金融與跨領域整合。
+            <h1 class="hero-title">你好，我是 吳佩馨</h1>
+            <p class="hero-subtitle" style="font-weight: 600; color: var(--accent-matcha);">
+                結合數據科學與量化金融，探索市場趨勢的創新解方
+            </p>
+            <p style="margin-bottom: 2.5rem; color: var(--text-secondary); line-height: 1.8;">
+                具備財務金融與資訊科學的雙重學術背景，專注於透過量化分析與機器學習模型解決複雜的金融問題。擅長運用 Python 處理高維度財務數據，並結合總體經濟觀點與演算法思維，開發具實用價值的投資組合與交易策略。從傳統的衍生性金融商品定價，到前瞻的 DeFi 鏈上理財架構，致力於在金融科技 (FinTech) 與量化研究領域持續創造價值。
             </p>
             <div class="hero-cta">
                 <a href="#about" class="btn btn-primary">探索更多</a>
@@ -35,9 +38,9 @@
         </div>
         <div class="hero-visual">
             <div class="glass-card aesthetic-card">
-                <i class="fa-solid fa-leaf card-icon"></i>
-                <h3>Matcha & Winter</h3>
-                <p>追求精緻的生活質感</p>
+                <i class="fa-solid fa-brain card-icon"></i>
+                <h3>Machine Learning</h3>
+                <p>運用 AI 解決複雜金融問題</p>
             </div>
             <div class="glass-card tech-card">
                 <i class="fa-solid fa-chart-line card-icon"></i>
@@ -48,27 +51,56 @@
     </header>
 
     <section class="section about-section" id="about">
-        <h2 class="section-title">多元面貌 <span>My Personas</span></h2>
+        <h2 class="section-title">核心專長 <span>Core Focus</span></h2>
         <div class="persona-grid">
             <div class="persona-card reveal">
+                <div class="persona-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                <h3>量化分析與財務工程</h3>
+                <p>專注於投資組合建構、衍生性金融商品定價與選擇權交易策略開發。善於解讀總經數據，並將市場資訊轉化為具體的投資決策建議。</p>
+            </div>
+            <div class="persona-card reveal">
                 <div class="persona-icon"><i class="fa-solid fa-laptop-code"></i></div>
-                <h3>專業者</h3>
-                <p>專攻財務金融、計量經濟與資訊科學。熟悉 Python 與機器學習，能熟練運用資料科學工具進行高維度金融數據分析與報酬預測。具備深度的市場洞察力。</p>
+                <h3>機器學習與資料科學</h3>
+                <p>熟悉 PCA、PLS、決策樹、圖神經網路 (GNN) 等演算法，擅長處理高維度財務數據的降維與資產報酬預測，並具備處理資料不平衡問題的實務經驗。</p>
             </div>
             <div class="persona-card reveal">
-                <div class="persona-icon"><i class="fa-solid fa-sparkles"></i></div>
-                <h3>生活美學家</h3>
-                <p>對美感有精準眼光，熱衷日韓最新流行趨勢。了解自我「鹿系」特徵，在日常配件（如抹茶冬暴風色系）與服飾挑選上展現獨特質感。</p>
+                <div class="persona-icon"><i class="fa-solid fa-cube"></i></div>
+                <h3>前瞻技術與 Web3</h3>
+                <p>熱衷於探索金融科技的前沿應用，包含 AI Agent 架構設計以及 Web3 與去中心化金融 (DeFi) 的鏈上理財與智能合約應用整合。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+        <h2 class="section-title">精選專案 <span>Featured Projects</span></h2>
+        <div class="persona-grid">
+            <div class="persona-card reveal">
+                <div class="persona-icon"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                <h3>等權重 ETF 投資組合建構與回測系統</h3>
+                <p><strong>專案描述：</strong>針對全球頂尖科技與傳產指標企業開發客製化的等權重 ETF 投資組合模型。</p>
+                <p style="margin-top: 0.5rem;"><strong>技術實作：</strong>運用 Python 處理面板資料，撰寫自動化分析腳本進行財務指標追蹤與績效回測。</p>
+                <a href="#" style="display: inline-block; margin-top: 1rem; color: var(--accent-matcha); text-decoration: none; font-weight: 600;"><i class="fa-brands fa-github"></i> 查看專案</a>
             </div>
             <div class="persona-card reveal">
-                <div class="persona-icon"><i class="fa-solid fa-gamepad"></i></div>
-                <h3>二次元探索者</h3>
-                <p>活躍於《原神》、《崩壞：星穹鐵道》與《Minecraft》。熱衷於 NIJISANJI EN 的 VTuber 圈與《暗殺教室》等經典動漫文化。</p>
+                <div class="persona-icon"><i class="fa-solid fa-network-wired"></i></div>
+                <h3>機器學習與財務計量預測模型開發</h3>
+                <p><strong>專案描述：</strong>探討高維度財務數據的降維與資產報酬預測，實作多種機器學習分類與預測模型。</p>
+                <p style="margin-top: 0.5rem;"><strong>技術實作：</strong>導入 PCA 與 PLS 進行特徵工程，運用決策樹建構模型，並針對「資料不平衡」實施優化處理。</p>
+                <a href="#" style="display: inline-block; margin-top: 1rem; color: var(--accent-matcha); text-decoration: none; font-weight: 600;"><i class="fa-solid fa-code"></i> Colab 筆記本</a>
             </div>
             <div class="persona-card reveal">
-                <div class="persona-icon"><i class="fa-solid fa-earth-asia"></i></div>
-                <h3>公民實踐者</h3>
-                <p>關注公共政策與社會議題，參與網路連署並追蹤立法院動態，用實際行動關心台灣的社會發展與未來。</p>
+                <div class="persona-icon"><i class="fa-solid fa-chart-area"></i></div>
+                <h3>台指選擇權模擬交易與策略開發</h3>
+                <p><strong>專案描述：</strong>參與台指選擇權模擬交易競賽，擔任團隊核心策略與分析角色。</p>
+                <p style="margin-top: 0.5rem;"><strong>技術實作：</strong>規劃並執行 Bearish Put Strategy 等策略，統整總經趨勢產出市場分析報告。</p>
+                <a href="#" style="display: inline-block; margin-top: 1rem; color: var(--accent-matcha); text-decoration: none; font-weight: 600;"><i class="fa-solid fa-file-pdf"></i> 分析報告</a>
+            </div>
+            <div class="persona-card reveal">
+                <div class="persona-icon"><i class="fa-brands fa-ethereum"></i></div>
+                <h3>AI Agent 結合 Web3 與 DeFi 理財架構</h3>
+                <p><strong>專案描述：</strong>研究並探討人工智慧在去中心化金融領域的應用潛力。</p>
+                <p style="margin-top: 0.5rem;"><strong>技術實作：</strong>設計結合 AI Agent 的自動化架構，優化鏈上資產管理效率、智能合約互動與收益最大化策略。</p>
+                <a href="#" style="display: inline-block; margin-top: 1rem; color: var(--accent-matcha); text-decoration: none; font-weight: 600;"><i class="fa-brands fa-github"></i> 查看架構</a>
             </div>
         </div>
     </section>
@@ -109,23 +141,45 @@
 
     <section class="section skills-section" id="skills">
         <h2 class="section-title">專業技能 <span>Skills</span></h2>
-        <div class="skills-container">
-            <div class="skill-category reveal">
-                <h3><i class="fa-solid fa-language"></i> 語言能力</h3>
-                <ul class="skill-list">
-                    <li><span>中文</span> <div class="skill-bar"><div class="skill-progress" style="width: 100%"></div></div></li>
-                    <li><span>英文 (Proficient)</span> <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div></li>
-                    <li><span>日文 (Basic)</span> <div class="skill-bar"><div class="skill-progress" style="width: 30%"></div></div></li>
-                </ul>
+        <div class="skills-container" style="grid-template-columns: 1fr; max-width: 1000px;">
+            <div class="skill-category reveal" style="margin-bottom: 2rem;">
+                <h3><i class="fa-solid fa-code"></i> 程式與開發工具</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+                    <span style="background: var(--bg-secondary); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500;">Python (Pandas, Scikit-learn, Matplotlib)</span>
+                    <span style="background: var(--bg-secondary); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500;">Google Colab</span>
+                    <span style="background: var(--bg-secondary); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500;">資料結構與演算法</span>
+                </div>
             </div>
             
+            <div class="skill-category reveal" style="margin-bottom: 2rem;">
+                <h3><i class="fa-solid fa-brain"></i> 機器學習與資料科學</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+                    <span style="background: var(--bg-secondary); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500;">PCA / PLS</span>
+                    <span style="background: var(--bg-secondary); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500;">決策樹 (Decision Trees)</span>
+                    <span style="background: var(--bg-secondary); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500;">類神經網路 (ANN)</span>
+                    <span style="background: var(--bg-secondary); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500;">圖神經網路 (GNN)</span>
+                    <span style="background: var(--bg-secondary); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500;">Square Root Lasso</span>
+                    <span style="background: var(--bg-secondary); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500;">資料不平衡處理</span>
+                </div>
+            </div>
+
+            <div class="skill-category reveal" style="margin-bottom: 2rem;">
+                <h3><i class="fa-solid fa-chart-line"></i> 財務工程與量化分析</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+                    <span style="background: var(--bg-secondary); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500;">投資組合建構</span>
+                    <span style="background: var(--bg-secondary); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500;">選擇權交易策略開發</span>
+                    <span style="background: var(--bg-secondary); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500;">衍生性金融商品定價</span>
+                    <span style="background: var(--bg-secondary); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500;">總經數據解讀</span>
+                </div>
+            </div>
+
             <div class="skill-category reveal">
-                <h3><i class="fa-solid fa-code"></i> 技術能力</h3>
-                <ul class="skill-list">
-                    <li><span>Python</span> <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div></li>
-                    <li><span>C++</span> <div class="skill-bar"><div class="skill-progress" style="width: 40%"></div></div></li>
-                    <li><span>MS Office Suite</span> <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div></li>
-                </ul>
+                <h3><i class="fa-brands fa-ethereum"></i> 前瞻技術探勘</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+                    <span style="background: var(--bg-secondary); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500;">AI Agent 架構設計</span>
+                    <span style="background: var(--bg-secondary); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500;">Web3</span>
+                    <span style="background: var(--bg-secondary); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500;">DeFi 應用整合</span>
+                </div>
             </div>
         </div>
     </section>
@@ -133,14 +187,36 @@
     <footer class="footer" id="contact">
         <div class="footer-content">
             <h2>Let's Connect!</h2>
-            <p>目前尋求國泰金控數位金融實習機會，歡迎與我聯繫。</p>
+            <p>歡迎與我聯繫，期待各種合作機會！</p>
             <div class="social-links">
                 <a href="mailto:112302043@g.nccu.edu.tw" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
                 <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <p class="copyright">&copy; 2026 Shannon Wu. Crafted with aesthetic logic.</p>
+            <p class="copyright">&copy; 2026 吳佩馨. Crafted with aesthetic logic.</p>
         </div>
     </footer>
+
+    <!-- AI Chat Window -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <h3>AI 助理</h3>
+            <button id="closeChatBtn" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message ai-message">
+                你好！我是 AI 助理，有什麼我可以幫忙的嗎？
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chatInput" placeholder="輸入訊息...">
+            <button id="sendChatBtn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+    
+    <!-- AI Chat Toggle Button -->
+    <button class="chat-toggle-btn" id="chatToggleBtn">
+        <i class="fa-solid fa-robot"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
